@@ -1,0 +1,52 @@
+/* Fiches à imprimer (A4). Même palette que le diaporama. À l'impression : « Fond d'écran / graphiques d'arrière-plan » activé. */
+html, body { height: auto; overflow: auto; background: #cfc6b6; }
+@page { size: A4; margin: 0; }
+.barre-outils { position: sticky; top: 0; z-index: 10; background: var(--encre); color: var(--creme); padding: 12px 24px; display: flex; gap: 18px; align-items: center; font-size: 15px; }
+.barre-outils button { background: var(--safran); border: 0; border-radius: 10px; padding: 9px 18px; font-weight: 700; }
+.page { width: 210mm; height: 292mm; margin: 18px auto; background: var(--creme); position: relative; overflow: hidden; padding: 14mm 14mm 16mm; display: flex; flex-direction: column; box-shadow: 0 8px 30px rgba(0,0,0,.25); page-break-after: always; break-after: page; }
+.page .kente { height: 8mm; background-size: 8mm 8mm, 8mm 8mm; background-position: 0 0, 4mm 0; }
+.entete { display: flex; align-items: center; justify-content: space-between; gap: 10mm; margin-bottom: 5mm; }
+.entete .logo { display: flex; align-items: center; gap: 4mm; }
+.entete .logo i { width: 13mm; height: 13mm; border-radius: 50%; background: var(--safran); display: grid; place-items: center; font-family: var(--titre); font-weight: 700; font-size: 8mm; font-style: normal; }
+.entete .logo b { font-family: var(--titre); font-size: 8mm; }
+.entete small { display: block; font-size: 3.2mm; color: var(--gris); }
+.page h1 { font-size: 13mm; line-height: 1.05; }
+.page h1 em { font-style: normal; background: linear-gradient(transparent 62%, rgba(242,163,43,.55) 62%); }
+.sous { font-size: 4.6mm; color: var(--gris); margin-top: 2mm; }
+
+/* Fiche membre : 4 gestes */
+.gestes { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; margin-top: 5mm; }
+.geste { background: var(--blanc); border: .8mm solid var(--sable); border-radius: 8mm; padding: 4mm 5mm; display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto 1fr; column-gap: 4mm; row-gap: 3mm; align-items: center; justify-items: center; }
+.geste .mini-tel { grid-column: 1 / -1; }
+.geste .num { width: 12mm; height: 12mm; font-size: 7mm; }
+.geste h2 { font-size: 7.4mm; margin: 0; line-height: 1.1; text-align: left; justify-self: start; }
+.mini-tel { width: 112px; height: 227px; position: relative; flex: none; }
+.mini-tel .phone { transform: scale(.28); transform-origin: top left; position: absolute; left: 0; top: 0; box-shadow: none; }
+.mini-tel .phone * { animation: none !important; }
+.mini-tel .tape { width: var(--w) !important; }
+.mini-tel .frag { opacity: 1; transform: none; }
+.blancs { margin-top: 5mm; display: grid; gap: 4mm; font-size: 4.4mm; }
+.blancs div { display: flex; gap: 3mm; align-items: baseline; }
+.blancs span { flex: 1; border-bottom: .5mm dotted var(--gris); height: 6mm; }
+
+/* Fiche rôle */
+.role-tete { display: flex; align-items: center; gap: 10mm; margin-top: 2mm; }
+.role-tete .avatar { width: 28mm; height: 28mm; font-size: 15mm; border-width: 1.4mm; }
+.actions { display: flex; flex-direction: column; gap: 3.5mm; margin-top: 6mm; }
+.action { display: flex; gap: 6mm; align-items: center; background: var(--blanc); border: .8mm solid var(--sable); border-radius: 7mm; padding: 4mm 7mm; }
+.action .num { width: 13mm; height: 13mm; font-size: 7.5mm; flex: none; }
+.action h2 { font-size: 6.8mm; line-height: 1.15; }
+.action p { font-size: 4.3mm; color: var(--gris); margin-top: 1mm; }
+.menu { display: inline-block; background: var(--encre); color: var(--safran); border-radius: 99px; padding: 1.2mm 4mm; font-size: 4mm; font-weight: 700; margin-top: 2mm; }
+.regle { margin-top: auto; background: var(--encre); color: var(--creme); border-radius: 7mm; padding: 4.5mm 8mm; font-size: 5mm; line-height: 1.35; margin-bottom: 4mm; }
+.regle b { color: var(--safran); }
+.contact { margin-top: 4mm; font-size: 4.4mm; display: flex; gap: 3mm; align-items: baseline; }
+.contact span { flex: 1; border-bottom: .5mm dotted var(--gris); height: 6mm; }
+
+@media print {
+  html, body { background: var(--creme); }
+  .barre-outils { display: none; }
+  .page { margin: 0; box-shadow: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+.page:last-of-type { page-break-after: auto; break-after: auto; }

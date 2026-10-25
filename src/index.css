@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+/* Palette AFMEY : Encre, Safran, Soleil, Terre cuite, Crème.
+   On redéfinit les échelles Tailwind déjà utilisées dans toutes les pages
+   (indigo = couleur principale, purple = accent, gray = neutres chauds, blue = information). */
+@theme {
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --color-white: #FBF6EC;
+
+  --color-encre: #17120E;
+  --color-safran: #F2A32B;
+  --color-soleil: #E2702E;
+  --color-terre: #A5410E;
+  --color-creme: #F4EADB;
+  --color-sable: #D9C7AA;
+
+  --color-indigo-50: #FDF3DF;
+  --color-indigo-100: #FBE3B5;
+  --color-indigo-200: #F7CB7E;
+  --color-indigo-300: #F2A32B;
+  --color-indigo-400: #E2702E;
+  --color-indigo-500: #C4571B;
+  --color-indigo-600: #A5410E;
+  --color-indigo-700: #8A3409;
+  --color-indigo-800: #2A221B;
+  --color-indigo-900: #17120E;
+
+  --color-purple-50: #FBEFE6;
+  --color-purple-100: #F6DCC8;
+  --color-purple-200: #EDBB94;
+  --color-purple-300: #E39A63;
+  --color-purple-400: #E2702E;
+  --color-purple-500: #D05F22;
+  --color-purple-600: #B8501A;
+  --color-purple-700: #98400F;
+  --color-purple-800: #763109;
+  --color-purple-900: #552205;
+
+  --color-blue-50: #F6F0E6;
+  --color-blue-100: #EADFCB;
+  --color-blue-200: #D9C7AA;
+  --color-blue-300: #BFA98A;
+  --color-blue-400: #9C8670;
+  --color-blue-500: #8A7560;
+  --color-blue-600: #6E5B48;
+  --color-blue-700: #5E5246;
+  --color-blue-800: #3F352C;
+  --color-blue-900: #2A221B;
+
+  --color-gray-50: #F9F3E7;
+  --color-gray-100: #F1E8D8;
+  --color-gray-200: #E4D6BE;
+  --color-gray-300: #D9C7AA;
+  --color-gray-400: #A8977F;
+  --color-gray-500: #6E6254;
+  --color-gray-600: #5E5246;
+  --color-gray-700: #3F352C;
+  --color-gray-800: #2A221B;
+  --color-gray-900: #17120E;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background: #F4EADB;
+    color: #17120E;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #D9C7AA transparent;
+  }
+
+  :focus-visible {
+    outline: 3px solid #F2A32B;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* ───────── Mouvement : transitions, entrées de page, fenêtres, chargement ─────────
+   Tout est neutralisé pour les personnes qui demandent moins d'animation. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes monter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes surgir { from { opacity: 0; transform: translateY(18px) scale(0.96); } to { opacity: 1; transform: none; } }
+  @keyframes balayage { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+  @keyframes tourner { to { transform: rotate(360deg); } }
+  @keyframes pulsation-douce { 0%, 100% { box-shadow: 0 0 0 0 rgba(242,163,43,0.45); } 50% { box-shadow: 0 0 0 8px rgba(242,163,43,0); } }
+
+  /* Arrivée d'une page : le contenu monte, bloc après bloc */
+  .page-enter > * > * { animation: monter 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+  .page-enter > * > *:nth-child(2) { animation-delay: 0.05s; }
+  .page-enter > * > *:nth-child(3) { animation-delay: 0.1s; }
+  .page-enter > * > *:nth-child(4) { animation-delay: 0.15s; }
+  .page-enter > * > *:nth-child(5) { animation-delay: 0.2s; }
+  .page-enter > * > *:nth-child(n+6) { animation-delay: 0.25s; }
+
+  /* Cartes : zoom au survol */
+  .zoom {
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    will-change: transform;
+  }
+  .zoom:hover {
+    transform: scale(1.035);
+    box-shadow: 0 14px 30px -12px rgba(23, 18, 14, 0.35);
+    border-color: #17120E;
+    position: relative;
+    z-index: 5;
+  }
+  .zoom-lg:hover { transform: scale(1.012); }
+
+  /* Fenêtres : fond qui s'estompe, boîte qui surgit */
+  div[class*="fixed inset-0"][class*="bg-black/50"] { animation: fondu 0.2s ease backwards; }
+  div[class*="fixed inset-0"][class*="bg-black/50"] > div { animation: surgir 0.3s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+
+  /* Appui sur un bouton */
+  button:not(:disabled) { transition: scale 0.15s ease, background-color 0.2s ease, filter 0.2s ease, opacity 0.2s ease; }
+  button:not(:disabled):active { scale: 0.97; }
+
+  /* Chargement : balayage lumineux à la place d'un simple clignotement */
+  .skeleton-shimmer {
+    background-image: linear-gradient(100deg, transparent 30%, rgba(251, 246, 236, 0.75) 50%, transparent 70%);
+    background-size: 200% 100%;
+    animation: balayage 1.6s linear infinite;
+  }
+
+  @keyframes pousse { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .barre-pousse { transform-origin: left; animation: pousse 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards; animation-delay: 0.2s; }
+
+  @keyframes glisser { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+  .toast-entree { animation: glisser 0.3s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+
+  .spinner { animation: tourner 0.8s linear infinite; }
+  .pulsation { animation: pulsation-douce 2s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

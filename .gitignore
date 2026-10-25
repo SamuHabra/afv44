@@ -1,0 +1,12 @@
+node_modules/
+.next/
+dist/
+build/
+*.log
+.env.*
+!.env.example
+.env
+
+# Sauvegardes de la base (données personnelles)
+sauvegardes/
+afmey-*.sql

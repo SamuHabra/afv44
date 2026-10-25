@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFMEY — Présentation de l'application</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5z"/><path d="M4 19a2 2 0 0 1 2-2h13"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M17 14c2.5 0 4.5 2 4.5 4.5"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16.5" cy="13.5" r="1.2"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.2c-.5-.8-1.4-1.2-2.5-1.2-1.5 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.8 2.5 2-1 2-2.5 2c-1.100 0-2-.4-2.500-1.200M12 6v2M12 16v2"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3M14 9l2 2"/></symbol>
+<symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.500 2.300c-.7.4-1 .9-1 1.700M12 17h.01"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L17 4l3 3L8 19l-4 1z"/><path d="M14 7l3 3"/></symbol>
+<symbol id="i-stamp" viewBox="0 0 24 24"><path d="M9 3h6v6l2 4H7l2-4V3z"/><path d="M5 17h14v4H5z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.800-8-11a4.500 4.500 0 0 1 8-2.800A4.500 4.500 0 0 1 20 9c0 6.200-8 11-8 11z"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.900 4.900l2.100 2.100M17 17l2.100 2.100M4.900 19.100L7 17M17 7l2.100-2.100"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 110 60"><path d="M6 30h92M72 8l26 22-26 22"/></symbol>
+</defs></svg>
+<div id="progres"></div>
+<div id="scene"><div id="stage">
+<section class="slide " data-section="Accueil" data-titre="AFMEY, notre application">
+<div class="soleil" style="width:900px;height:900px;right:-200px;top:-260px"></div>
+<div style="display:flex;gap:90px;align-items:center;flex:1">
+  <div style="flex:1.3">
+    <div class="etiquette rev" style="--d:0">Filles &amp; Femmes Mebounou M'Eyinga</div>
+    <h1 class="rev" style="--d:.15;margin-top:30px">Ensemble,<br>nous <em class="soulign">grandissons.</em></h1>
+    <p class="gros rev" style="--d:.45;margin-top:50px;max-width:900px">Notre nouvelle application pour suivre nos cotisations, notre épargne, nos prêts et nos réunions.</p>
+  </div>
+  <div class="arche rev zoom" style="--d:.3;width:560px;height:760px"><img src="img/femme-africaine.jpg" alt=""></div>
+</div>
+<div class="kente"></div><div class="notes-contenu" hidden><ul><li>Accueillir chaleureusement. Remercier d'être venues. Dire que la séance dure 45 minutes.</li><li>Ne pas parler de technique. Dire : « Aujourd'hui, vous allez voir comment garder nos comptes ensemble, simplement, sur votre téléphone. »</li><li>Matériel : grand écran ou projecteur, une dizaine de téléphones chargés, fiches imprimées, comptes d'essai prêts.</li></ul></div></section>
+<section class="slide " data-section="Accueil" data-titre="Le programme de la séance">
+<div class="etiquette rev">Aujourd'hui</div>
+<h2 class="rev" style="--d:.1">45 minutes, quatre temps</h2>
+<div class="etapes-prog">
+  <div class="etape-prog rev" style="--d:.3"><div class="duree">10<small> min</small></div><div class="barre"><i style="--d:.3"></i></div><h3>Pourquoi ?</h3><p class="petit">Ce que l'application change pour nous.</p></div>
+  <div class="etape-prog rev" style="--d:.5"><div class="duree">15<small> min</small></div><div class="barre"><i style="--d:.5"></i></div><h3>On regarde</h3><p class="petit">Une histoire du début à la fin, sur grand écran.</p></div>
+  <div class="etape-prog rev" style="--d:.7"><div class="duree">15<small> min</small></div><div class="barre"><i style="--d:.7"></i></div><h3>À vous !</h3><p class="petit">Chacune essaie sur son téléphone.</p></div>
+  <div class="etape-prog rev" style="--d:.9"><div class="duree">5<small> min</small></div><div class="barre"><i style="--d:.9"></i></div><h3>Vos questions</h3><p class="petit">Et la suite.</p></div>
+</div>
+<div class="kente"></div><div class="notes-contenu" hidden><ul><li>Annoncer le déroulé : 10 + 15 + 15 + 5 minutes.</li><li>Rassurer : « Il n'y a pas de mauvaise question. Si quelque chose n'est pas clair, levez la main. »</li><li>Presser la touche N pour voir ces notes, G pour la vue d'ensemble.</li></ul></div></section>
+<section class="slide " data-section="1 · Pourquoi" data-titre="Aujourd'hui, nous utilisons le cahier">
+<div class="etiquette rev">1 · Pourquoi une application ?</div>
+<h2 class="rev" style="--d:.1">Aujourd'hui : <em class="soulign">le cahier</em></h2>
+<div class="grille g3" style="margin-top:80px">
+  <div class="carte rev" style="--d:.3"><div class="icone rouge"><svg><use href="#i-book"/></svg></div><h3>Il peut se perdre</h3><p>Un cahier perdu ou abîmé, et c'est l'histoire de l'année qui disparaît.</p></div>
+  <div class="carte rev" style="--d:.5"><div class="icone rouge"><svg><use href="#i-pen"/></svg></div><h3>Les erreurs arrivent</h3><p>Un chiffre mal recopié, une addition oubliée : difficile à retrouver.</p></div>
+  <div class="carte rev" style="--d:.7"><div class="icone rouge"><svg><use href="#i-question"/></svg></div><h3>On attend la réunion</h3><p>Pour savoir où j'en suis, je dois demander à la trésorière.</p></div>
+</div>
+<p class="gros rev" style="--d:1;margin-top:60px">Le cahier a servi longtemps. Il est temps de lui <strong>donner de l'aide</strong>.</p><div class="notes-contenu" hidden><ul><li>Partir de leur vécu. Demander : « Qui a déjà eu du mal à savoir combien elle avait cotisé ? » Laisser répondre.</li><li>Ne jamais critiquer la trésorière ni le cahier : il a bien servi. L'application l'aide, elle ne la remplace pas.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>1 · Pourquoi</span></div></section>
+<section class="slide safran" data-section="1 · Pourquoi" data-titre="Avec l'application">
+<div class="etiquette rev">1 · Pourquoi une application ?</div>
+<h2 class="rev" style="--d:.1">Demain : <em class="soulign">trois promesses</em></h2>
+<div class="grille g3" style="margin-top:80px">
+  <div class="carte safran rev" style="--d:.3"><div class="icone terre "><svg><use href="#i-eye"/></svg></div><h3>Je vois mes comptes</h3><p>Quand je veux, depuis mon téléphone : ce que j'ai versé, ce qu'il me reste à payer.</p></div>
+  <div class="carte safran rev" style="--d:.5"><div class="icone terre "><svg><use href="#i-users"/></svg></div><h3>Toutes pareilles</h3><p>Tout le monde voit les mêmes chiffres. La transparence pour l'association.</p></div>
+  <div class="carte safran rev" style="--d:.7"><div class="icone terre "><svg><use href="#i-shield"/></svg></div><h3>Rien ne se perd</h3><p>Chaque cotisation est conservée, avec sa date, en sécurité.</p></div>
+</div><div class="notes-contenu" hidden><ul><li>Une promesse à la fois, avec un exemple concret pour chacune.</li><li>« Je vois mes comptes » : plus besoin d'appeler pour savoir combien il reste à payer.</li><li>« Toutes pareilles » : si un montant est faux, tout le monde peut le voir et le corriger ensemble.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>1 · Pourquoi</span></div></section>
+<section class="slide " data-section="1 · Pourquoi" data-titre="Ce qui ne change pas">
+<div class="etiquette rev">1 · Pourquoi une application ?</div>
+<h2 class="rev" style="--d:.1">Ce qui <em class="soulign">ne change pas</em></h2>
+<div class="grille g2" style="margin-top:70px;gap:30px 70px">
+  <div class="ligne-num rev" style="--d:.3"><div class="icone vert" style="width:96px;height:96px"><svg><use href="#i-check"/></svg></div><p class="gros">Nos règles et nos statuts</p></div>
+  <div class="ligne-num rev" style="--d:.45"><div class="icone vert" style="width:96px;height:96px"><svg><use href="#i-check"/></svg></div><p class="gros">Nos réunions du samedi</p></div>
+  <div class="ligne-num rev" style="--d:.6"><div class="icone vert" style="width:96px;height:96px"><svg><use href="#i-check"/></svg></div><p class="gros">Le rôle de chacune</p></div>
+  <div class="ligne-num rev" style="--d:.75"><div class="icone vert" style="width:96px;height:96px"><svg><use href="#i-check"/></svg></div><p class="gros">Notre confiance entre nous</p></div>
+</div>
+<div class="carte encre rev" style="--d:1.1;margin-top:60px"><p class="moyen" style="color:var(--creme)">L'application <strong style="color:var(--safran)">aide</strong> la trésorière et la présidente. Elle ne décide pas à leur place.</p></div><div class="notes-contenu" hidden><ul><li>Point très important pour rassurer : rien ne change dans les règles ni dans les décisions.</li><li>Pendant le premier mois, le cahier reste utilisé en parallèle (voir la dernière diapositive).</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>1 · Pourquoi</span></div></section>
+<section class="slide " data-section="1 · Pourquoi" data-titre="Mes informations sont protégées">
+<div class="etiquette rev">1 · Pourquoi une application ?</div>
+<h2 class="rev" style="--d:.1">Mes informations sont <em class="soulign">protégées</em></h2>
+<div class="grille g3" style="margin-top:80px">
+  <div class="carte rev" style="--d:.3"><div class="icone "><svg><use href="#i-key"/></svg></div><h3>Mon numéro et mon mot de passe</h3><p>Seule moi peux ouvrir mon compte.</p></div>
+  <div class="carte rev" style="--d:.5"><div class="icone "><svg><use href="#i-lock"/></svg></div><h3>Personne ne change mes comptes</h3><p>Une membre ne peut pas modifier les chiffres des autres.</p></div>
+  <div class="carte rev" style="--d:.7"><div class="icone "><svg><use href="#i-users"/></svg></div><h3>Chacune voit selon son rôle</h3><p>La trésorière saisit, la présidente valide.</p></div>
+</div>
+<p class="gros rev" style="--d:1;margin-top:55px">Ne donnez jamais votre mot de passe, <strong>même à une amie</strong>.</p><div class="notes-contenu" hidden><ul><li>Insister sur le mot de passe personnel. Ne jamais l'écrire sur la fiche ni le donner.</li><li>Pas de détails techniques. Si on demande « et si on pirate ? » : les données sont protégées, chaque personne n'a accès qu'à ce que son rôle permet.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>1 · Pourquoi</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="L'histoire de Mina">
+<div class="etiquette rev">2 · On regarde ensemble</div>
+<h2 class="rev" style="--d:.1">Une histoire : <em class="soulign">la cotisation de Mina</em></h2>
+<div class="grille g3" style="margin-top:70px;gap:50px">
+  <div class="rev" style="--d:.4;text-align:center"><div class="avatar" style="margin:0 auto">M</div><h3 style="margin-top:26px">Mina</h3><span class="pastille claire">Membre</span><p class="moyen" style="margin-top:18px">Elle doit encore <strong>5 000 FCFA</strong> à la caisse Secours.</p></div>
+  <div class="rev" style="--d:.6;text-align:center"><div class="avatar t2" style="margin:0 auto">T</div><h3 style="margin-top:26px">Tina</h3><span class="pastille claire">Trésorière</span><p class="moyen" style="margin-top:18px">Elle enregistre ce que les membres versent.</p></div>
+  <div class="rev" style="--d:.8;text-align:center"><div class="avatar t3" style="margin:0 auto">P</div><h3 style="margin-top:26px">Paulette</h3><span class="pastille claire">Présidente</span><p class="moyen" style="margin-top:18px">Elle vérifie et valide.</p></div>
+</div>
+<p class="petit rev" style="--d:1.2;margin-top:40px;text-align:center">Les prénoms de cette histoire sont inventés.</p><div class="notes-contenu" hidden><ul><li>Présenter les trois personnages. Demander : « Qui ressemble à Mina ? » (toutes).</li><li>Cette histoire sera suivie sur 7 diapositives : à chaque touche →, une nouvelle étape apparaît sur certaines pages.</li><li>Ne pas aller trop vite. Chaque étape = un geste que les participantes feront tout à l'heure.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Mina se connecte"><div style="display:flex;gap:100px;align-items:center;flex:1">
+  <div style="flex:1">
+    <div class="ligne-num rev" style="--d:0"><div class="num">1</div><div class="etiquette" style="font-size:24px">Étape 1 sur 7</div></div>
+    <h2 class="rev" style="--d:.15;font-size:84px">Mina se connecte</h2>
+    <p class="gros rev" style="--d:.35;margin-top:36px;max-width:760px">Elle écrit son numéro de téléphone, puis son mot de passe, et appuie sur le bouton.</p><div class="rev" style="--d:.7;margin-top:46px;display:flex;flex-direction:column;gap:18px"><div class="ligne-num"><div class="num" style="width:64px;height:64px;font-size:36px">1</div><p class="moyen">Mon numéro</p></div><div class="ligne-num"><div class="num" style="width:64px;height:64px;font-size:36px">2</div><p class="moyen">Mon mot de passe</p></div><div class="ligne-num"><div class="num" style="width:64px;height:64px;font-size:36px">3</div><p class="moyen">« Se connecter »</p></div></div>
+  </div>
+  <div class="phone rev zoom" style="--d:.2"><div class="ecran"><div class="barre-haut"><b>AFMEY</b></div><div class="corps" style="gap:20px;padding-top:34px">
+ <div style="font-family:var(--titre);font-size:44px;font-weight:700;line-height:1.1">Bienvenue,<br>ma sœur</div>
+ <div><div class="champ-nom">Téléphone</div><div class="champ actif"><span class="tape" style="--w:17ch;--t:1.4s">+237 677 00 00 00</span><span class="curseur"></span></div></div>
+ <div><div class="champ-nom">Mot de passe</div><div class="champ"><span class="tape" style="--w:8ch;--t:3.2s">••••••••</span></div></div>
+ <div class="bouton pulse" style="margin-top:10px">Se connecter</div></div></div></div>
+</div><div class="notes-contenu" hidden><ul><li>Geste n°1 : se connecter. Laisser l'animation se terminer avant de parler.</li><li>Dire : « Le numéro, c'est celui que vous avez donné à l'association. Le mot de passe vous est remis par l'administratrice. »</li><li>À la toute première connexion, l'application demande de choisir son propre mot de passe.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Mina voit où elle en est"><div style="display:flex;gap:100px;align-items:center;flex:1">
+  <div style="flex:1">
+    <div class="ligne-num rev" style="--d:0"><div class="num">2</div><div class="etiquette" style="font-size:24px">Étape 2 sur 7</div></div>
+    <h2 class="rev" style="--d:.15;font-size:84px">Mina voit où elle en est</h2>
+    <p class="gros rev" style="--d:.35;margin-top:36px;max-width:760px">Dès l'ouverture, elle lit son épargne et ce qu'il lui reste à payer.</p><div class="carte rev" style="--d:.7;margin-top:46px;max-width:700px"><p class="moyen" style="color:var(--encre)">Plus besoin de demander : <strong>tout est sur « Mon espace ».</strong></p></div>
+  </div>
+  <div class="phone rev zoom" style="--d:.2"><div class="ecran"><div class="barre-haut"><b>Mon espace</b><div class="cloche"><svg><use href="#i-bell"/></svg></div></div><div class="corps">
+ <div class="mini-carte encre"><small>Bonjour Mina</small><div class="montant">42 000 FCFA</div><small style="margin-top:6px">Mon épargne</small></div>
+ <div class="mini-carte"><small>Cotisation Secours · 2026</small><div class="montant" style="font-size:36px">10 000 / 15 000</div><div style="margin-top:8px"><span class="badge att">Reste à payer : 5 000 FCFA</span></div></div>
+ <div class="mini-carte"><small>Prochaine réunion</small><b style="font-size:28px">Samedi · 15 h</b></div></div></div></div>
+</div><div class="notes-contenu" hidden><ul><li>Geste n°2 : voir mon solde. Montrer du doigt sur l'écran les 3 blocs : mon épargne, ce qu'il me reste à payer, la prochaine réunion.</li><li>Les chiffres sont inventés pour la démonstration.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="À la réunion, Mina remet sa cotisation">
+<div class="ligne-num rev" style="--d:0"><div class="num">3</div><div class="etiquette" style="font-size:24px">Étape 3 sur 7</div></div>
+<h2 class="rev" style="--d:.15;font-size:84px">Samedi, à la réunion</h2>
+<div style="display:flex;align-items:center;justify-content:center;gap:80px;flex:1">
+  <div class="rev gauche" style="--d:.5;text-align:center"><div class="avatar" style="margin:0 auto;width:210px;height:210px;font-size:104px">M</div><h3 style="margin-top:24px">Mina</h3></div>
+  <div class="rev zoom" style="--d:1;text-align:center"><div class="carte safran" style="padding:34px 54px"><div style="font-family:var(--titre);font-size:92px;font-weight:700">5 000</div><div style="font-size:34px;font-weight:700">FCFA</div></div><p class="moyen" style="margin-top:16px">en main propre</p></div>
+  <div class="fleche rev" style="--d:1.2"><svg viewBox="0 0 110 60"><use href="#i-arrow"/></svg></div>
+  <div class="rev" style="--d:1.4;text-align:center"><div class="avatar t2" style="margin:0 auto;width:210px;height:210px;font-size:104px">T</div><h3 style="margin-top:24px">Tina, la trésorière</h3></div>
+</div>
+<p class="gros rev" style="--d:1.8;text-align:center">Ça, <strong>c'est comme avant</strong> : l'argent reste remis à la trésorière.</p><div class="notes-contenu" hidden><ul><li>Insister : le geste physique ne change pas. Mina remet l'argent à Tina, comme toujours.</li><li>L'application ne manipule pas d'argent : elle garde la trace de ce qui a été versé.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Tina enregistre"><div style="display:flex;gap:100px;align-items:center;flex:1">
+  <div style="flex:1">
+    <div class="ligne-num rev" style="--d:0"><div class="num">4</div><div class="etiquette" style="font-size:24px">Étape 4 sur 7</div></div>
+    <h2 class="rev" style="--d:.15;font-size:84px">Tina l'enregistre</h2>
+    <p class="gros rev" style="--d:.35;margin-top:36px;max-width:760px">La trésorière écrit la cotisation dans l'application. Elle apparaît « À valider ».</p><div class="rev" style="--d:.7;margin-top:40px"><span class="pastille">Trésorière : saisir</span></div><p class="petit rev" style="--d:.9;margin-top:20px">Appuyez sur → pour voir apparaître la ligne « À valider ».</p>
+  </div>
+  <div class="phone rev zoom" style="--d:.2"><div class="ecran"><div class="barre-haut"><b>Nouveau mouvement</b></div><div class="corps" style="gap:12px;padding-top:20px">
+ <div><div class="champ-nom">Type</div><div class="champ" style="min-height:54px">Cotisation</div></div>
+ <div><div class="champ-nom">Membre</div><div class="champ" style="min-height:54px">Mina</div></div>
+ <div><div class="champ-nom">Caisse</div><div class="champ" style="min-height:54px">Secours</div></div>
+ <div><div class="champ-nom">Montant</div><div class="champ actif" style="min-height:54px">5 000 FCFA</div></div>
+ <div style="position:relative;margin-top:6px;min-height:84px"><div class="bouton" data-cache-a="1">Enregistrer le mouvement</div>
+ <div class="frag" data-f="1" style="position:absolute;inset:0"><div class="mini-carte" style="display:flex;justify-content:space-between;align-items:center;padding:20px 20px"><span>Cotisation · Mina</span><span class="badge att">À valider</span></div></div></div></div></div></div>
+</div><div class="notes-contenu" hidden><ul><li>Geste de la trésorière : « Nouveau mouvement ». Remplir le type, la membre, la caisse, le montant, puis « Enregistrer ».</li><li>Appuyer sur → : la ligne « À valider » apparaît. Expliquer : le montant n'est pas encore compté tant que la présidente n'a pas validé.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Paulette valide">
+<div style="display:flex;gap:80px;align-items:center;flex:1">
+ <div style="width:640px;flex:none">
+  <div class="ligne-num rev" style="--d:0"><div class="num">5</div><div class="etiquette" style="font-size:24px">Étape 5 sur 7</div></div>
+  <h2 class="rev" style="--d:.15;font-size:84px">Paulette valide</h2>
+  <p class="gros rev" style="--d:.35;margin-top:36px">La présidente vérifie la ligne, puis appuie sur <strong>Valider</strong>.</p>
+  <div class="rev" style="--d:.7;margin-top:40px"><span class="pastille">Présidente : valider</span></div>
+  <p class="petit rev" style="--d:.9;margin-top:20px">Appuyez sur → pour valider.</p>
+ </div>
+ <div class="rev zoom" style="--d:.25"><div class="laptop"><div class="ecran">
+  <div class="barre-haut" style="padding-top:22px"><b>Mouvements</b><span class="badge att">1 à valider</span></div>
+  <div class="corps"><div class="table-mvt">
+    <div class="r tete"><span>Date</span><span>Description</span><span>Montant</span><span>Statut</span></div>
+    <div class="r"><span>Sam. 12</span><span>Cotisation · Mina</span><b>5 000</b><span style="position:relative;min-height:46px"><span class="frag cache-quand-suite" data-f="1" style="position:absolute;left:0;top:0;display:flex;gap:10px;align-items:center"><span class="bouton vert" style="font-size:22px;padding:8px 22px">Valider</span></span><span class="frag" data-f="2" style="position:absolute;left:0;top:6px"><span class="badge ok">✓ Validé</span></span></span></div>
+    <div class="r"><span>Sam. 12</span><span>Cotisation · Rose</span><b>2 000</b><span><span class="badge ok">✓ Validé</span></span></div>
+    <div class="r"><span>Sam. 05</span><span>Prestation · Naissance</span><b>10 000</b><span><span class="badge ok">✓ Validé</span></span></div>
+  </div></div></div></div><div class="laptop-base"></div></div>
+</div><div class="notes-contenu" hidden><ul><li>Appuyer sur → : le bouton « Valider » apparaît. Appuyer encore : la ligne devient « ✓ Validé ».</li><li>Dire : « Seules la présidente, l'administratrice et la commissaire peuvent valider. C'est une deuxième paire d'yeux : on évite les erreurs. »</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Mina est prévenue"><div style="display:flex;gap:100px;align-items:center;flex:1">
+  <div style="flex:1">
+    <div class="ligne-num rev" style="--d:0"><div class="num">6</div><div class="etiquette" style="font-size:24px">Étape 6 sur 7</div></div>
+    <h2 class="rev" style="--d:.15;font-size:84px">Mina est prévenue</h2>
+    <p class="gros rev" style="--d:.35;margin-top:36px;max-width:760px">Son téléphone la prévient. Son compte est à jour : plus rien à payer.</p><p class="petit rev" style="--d:.7;margin-top:30px">Appuyez sur → pour voir la notification, puis le nouvel état.</p><div class="carte rev" style="--d:.9;margin-top:36px;max-width:720px"><p class="moyen" style="color:var(--encre)">La petite <strong>cloche</strong> en haut à droite montre les nouvelles.</p></div>
+  </div>
+  <div class="phone rev zoom" style="--d:.2"><div class="ecran"><div class="barre-haut"><b>Mon espace</b><div class="cloche"><svg><use href="#i-bell"/></svg><span class=point></span></div></div><div class="toast frag" data-f="1" style="top:150px"><svg style="width:40px;height:40px;stroke:var(--safran);fill:none;stroke-width:2;flex:none"><use href="#i-bell"/></svg><div><b>Mouvement validé</b>Cotisation Secours · 5 000 FCFA</div></div>
+<div class="corps" style="padding-top:34px">
+ <div class="mini-carte encre"><small>Bonjour Mina</small><div class="montant">42 000 FCFA</div><small style="margin-top:6px">Mon épargne</small></div>
+ <div class="mini-carte"><small>Cotisation Secours · 2026</small><div class="montant" style="font-size:32px;white-space:nowrap;position:relative;min-height:44px"><span data-cache-a="2" style="position:absolute;left:0">10 000 / 15 000</span><span class="frag" data-f="2" style="position:absolute;left:0">15 000 / 15 000</span></div>
+   <div style="margin-top:8px;position:relative;min-height:44px"><span class="badge att" data-cache-a="3" style="position:absolute;left:0">Reste à payer : 5 000 FCFA</span><span class="frag" data-f="3" style="position:absolute;left:0"><span class="badge ok">✓ À jour</span></span></div></div></div></div></div>
+</div><div class="notes-contenu" hidden><ul><li>Geste n°3 : voir mes notifications = la cloche. Appuyer sur → pour la notification.</li><li>Montrer que le compte de Mina est maintenant « À jour ». Elle n'a rien eu à demander.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Mina demande un prêt"><div style="display:flex;gap:100px;align-items:center;flex:1">
+  <div style="flex:1">
+    <div class="ligne-num rev" style="--d:0"><div class="num">7</div><div class="etiquette" style="font-size:24px">Étape 7 sur 7</div></div>
+    <h2 class="rev" style="--d:.15;font-size:84px">Mina demande un prêt</h2>
+    <p class="gros rev" style="--d:.35;margin-top:36px;max-width:760px">Elle choisit le montant et la durée. L'application calcule les intérêts. La présidente répond.</p><div class="rev" style="--d:.7;margin-top:40px;display:flex;gap:16px;flex-wrap:wrap"><span class="pastille claire">Pas plus de 3 mois</span><span class="pastille claire">5 % par mois</span></div><p class="petit rev" style="--d:.9;margin-top:24px">Appuyez sur → : la demande part « En attente ».</p>
+  </div>
+  <div class="phone rev zoom" style="--d:.2"><div class="ecran"><div class="barre-haut"><b>Demander un prêt</b></div><div class="corps" style="gap:12px;padding-top:20px">
+ <div><div class="champ-nom">Montant (FCFA)</div><div class="champ actif" style="min-height:54px">50 000</div></div>
+ <div><div class="champ-nom">Durée</div><div class="champ" style="min-height:54px">3 mois</div></div>
+ <div><div class="champ-nom">Motif</div><div class="champ" style="min-height:54px">Matériel de commerce</div></div>
+ <div class="mini-carte" style="padding:14px 18px"><small>Intérêts estimés (5 % par mois)</small><div class="montant" style="font-size:34px">7 500 FCFA</div></div>
+ <div style="position:relative;min-height:84px"><div class="bouton" data-cache-a="1">Envoyer ma demande</div>
+ <div class="frag" data-f="1" style="position:absolute;inset:0"><div class="mini-carte" style="display:flex;justify-content:space-between;align-items:center;padding:20px 20px"><span>Prêt · 50 000</span><span class="badge att">En attente</span></div></div></div></div></div></div>
+</div><div class="notes-contenu" hidden><ul><li>Geste n°4 : demander un prêt. Les règles (3 mois maximum, 5 % par mois) viennent des statuts et sont réglées par l'administratrice.</li><li>La présidente ou l'administratrice approuve ou refuse. Mina reçoit une notification dans les deux cas.</li><li>Remboursements : enregistrés par la trésorière, comme pour une cotisation.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="2 · Démonstration" data-titre="Chacune son rôle">
+<div class="etiquette rev">2 · On regarde ensemble</div>
+<h2 class="rev" style="--d:.1">Chacune <em class="soulign">son rôle</em></h2>
+<div class="grille g4" style="margin-top:70px;gap:28px"><div class="carte  rev" style="--d:0.3;text-align:center"><div class="avatar " style="margin:0 auto;width:120px;height:120px;font-size:60px">M</div><h3>Membre</h3><p style="font-size:34px;font-weight:700;color:var(--terre)">Voir et demander</p><p>Je regarde mes comptes et je demande un prêt.</p></div><div class="carte  rev" style="--d:0.5;text-align:center"><div class="avatar t2" style="margin:0 auto;width:120px;height:120px;font-size:60px">T</div><h3>Trésorière</h3><p style="font-size:34px;font-weight:700;color:var(--terre)">Saisir et suivre</p><p>Elle enregistre les versements et les remboursements.</p></div><div class="carte  rev" style="--d:0.7;text-align:center"><div class="avatar t3" style="margin:0 auto;width:120px;height:120px;font-size:60px">P</div><h3>Présidente</h3><p style="font-size:34px;font-weight:700;color:var(--terre)">Valider</p><p>Elle vérifie, valide les mouvements et répond aux prêts.</p></div><div class="carte  rev" style="--d:0.9000000000000001;text-align:center"><div class="avatar t4" style="margin:0 auto;width:120px;height:120px;font-size:60px">A</div><h3>Administratrice</h3><p style="font-size:34px;font-weight:700;color:var(--terre)">Tout le reste</p><p>Membres, règles, rôles et clôture de l'année.</p></div></div>
+<p class="gros rev" style="--d:1.3;margin-top:50px;text-align:center">Vous n'avez pas à tout apprendre : <strong>seulement votre rôle</strong>.</p><div class="notes-contenu" hidden><ul><li>Résumer : chaque rôle a ses 3 ou 4 gestes. La fiche qui sera distribuée correspond au rôle de chacune.</li><li>Les fiches détaillées sont en annexe de ce diaporama et dans le fichier fiches.html.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>2 · Démonstration</span></div></section>
+<section class="slide " data-section="3 · À vous" data-titre="À vous de jouer">
+<div class="etiquette rev">3 · À vous</div>
+<h2 class="rev" style="--d:.1">À vous de jouer !</h2>
+<p class="gros rev" style="--d:.25;margin-top:20px">Prenez votre téléphone et la fiche. Quatre gestes :</p>
+<div style="display:flex;flex-direction:column;gap:22px;margin-top:44px;max-width:1300px">
+  <div class="coche auto rev" style="--d:0.5"><div class="case"><svg><use href="#i-check"/></svg></div><div class="num" style="width:64px;height:64px;font-size:36px">1</div>Je me connecte</div><div class="coche auto rev" style="--d:0.8"><div class="case"><svg><use href="#i-check"/></svg></div><div class="num" style="width:64px;height:64px;font-size:36px">2</div>Je regarde mon solde</div><div class="coche auto rev" style="--d:1.1"><div class="case"><svg><use href="#i-check"/></svg></div><div class="num" style="width:64px;height:64px;font-size:36px">3</div>Je regarde mes notifications</div><div class="coche auto rev" style="--d:1.4"><div class="case"><svg><use href="#i-check"/></svg></div><div class="num" style="width:64px;height:64px;font-size:36px">4</div>Je prépare une demande de prêt</div>
+</div><div class="notes-contenu" hidden><ul><li>Distribuer les fiches. Chaque participante utilise le compte d'essai qui lui est remis.</li><li>Circuler dans la salle, aider sans prendre le téléphone : « Montrez-moi où vous voulez aller. »</li><li>Pour la demande de prêt : ne pas envoyer sur un compte réel. Utiliser le compte d'essai.</li><li>Durée : 15 minutes.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>3 · À vous</span></div></section>
+<section class="slide " data-section="3 · À vous" data-titre="Se connecter">
+<div class="etiquette rev">3 · À vous</div>
+<h2 class="rev" style="--d:.1">Pour <em class="soulign">me connecter</em></h2>
+<div class="grille g3" style="margin-top:70px">
+  <div class="carte rev" style="--d:.3"><div class="num">1</div><h3 style="margin-top:20px">J'ouvre le lien</h3><p>Sur mon téléphone, dans le navigateur. Je peux l'enregistrer sur l'écran d'accueil.</p></div>
+  <div class="carte rev" style="--d:.5"><div class="num">2</div><h3 style="margin-top:20px">J'écris mon numéro</h3><p>Avec le +237 au début, puis mon mot de passe provisoire.</p></div>
+  <div class="carte rev" style="--d:.7"><div class="num">3</div><h3 style="margin-top:20px">Je choisis mon mot de passe</h3><p>Au premier passage, je crée un mot de passe à moi, que je garde secret.</p></div>
+</div><div class="notes-contenu" hidden><ul><li>Avant la séance : remplacer, sur le grand écran et sur les fiches, le lien réel du site (à mettre dans la fiche imprimée).</li><li>Aider les personnes qui ont du mal à taper : agrandir l'écran, activer la dictée numérique si besoin.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>3 · À vous</span></div></section>
+<section class="slide " data-section="3 · À vous" data-titre="Si ça ne marche pas">
+<div class="etiquette rev">3 · À vous</div>
+<h2 class="rev" style="--d:.1">Si ça <em class="soulign">ne marche pas</em></h2>
+<p class="gros rev" style="--d:.25;margin-top:20px">Pas de panique : ce n'est jamais grave.</p>
+<div class="grille g3" style="margin-top:56px">
+  <div class="carte rev" style="--d:.4"><div class="icone "><svg><use href="#i-eye"/></svg></div><h3>Je vérifie</h3><p>Mon numéro est-il complet ? Mon mot de passe est-il bien écrit (majuscules, chiffres) ?</p></div>
+  <div class="carte rev" style="--d:.6"><div class="icone "><svg><use href="#i-lock"/></svg></div><h3>Trop d'essais</h3><p>Après plusieurs erreurs, le compte attend 15 minutes. Je ne m'énerve pas, j'attends.</p></div>
+  <div class="carte rev" style="--d:.8"><div class="icone "><svg><use href="#i-users"/></svg></div><h3>Je demande</h3><p>L'administratrice peut me donner un nouveau mot de passe provisoire.</p></div>
+</div><div class="notes-contenu" hidden><ul><li>Rassurer : on ne peut rien casser en se trompant.</li><li>Après plusieurs mauvais essais, la connexion est bloquée 15 minutes pour protéger le compte.</li><li>Seule l'administratrice peut donner un nouveau mot de passe provisoire.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>3 · À vous</span></div></section>
+<section class="slide safran" data-section="4 · Questions" data-titre="Et maintenant ?">
+<div class="etiquette rev">4 · Vos questions</div>
+<h2 class="rev" style="--d:.1">Et maintenant ?</h2>
+<div class="grille g3" style="margin-top:70px">
+  <div class="carte safran rev" style="--d:.3"><div class="num" style="background:var(--encre);color:var(--safran)">1</div><h3 style="margin-top:20px">Un mois d'essai</h3><p>Nous utilisons l'application <strong>et</strong> le cahier ensemble.</p></div>
+  <div class="carte safran rev" style="--d:.5"><div class="num" style="background:var(--encre);color:var(--safran)">2</div><h3 style="margin-top:20px">On compare</h3><p>Chaque mois, la trésorière vérifie que les deux sont identiques.</p></div>
+  <div class="carte safran rev" style="--d:.7"><div class="num" style="background:var(--encre);color:var(--safran)">3</div><h3 style="margin-top:20px">Puis on décide</h3><p>Si tout est juste, ensemble, nous laissons le cahier de côté.</p></div>
+</div>
+<p class="gros rev" style="--d:1.1;margin-top:60px">Vos questions ?</p><div class="notes-contenu" hidden><ul><li>Laisser 5 minutes de questions. Noter celles auxquelles vous ne savez pas répondre et y répondre à la prochaine réunion.</li><li>Annoncer la date de la prochaine réunion et qui est la personne à appeler en cas de souci (nom et numéro à ajouter sur la fiche).</li><li>Rappeler : le cahier reste la référence pendant le premier mois.</li></ul></div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>4 · Questions</span></div></section>
+<section class="slide sombre" data-section="4 · Questions" data-titre="Merci">
+<div class="soleil" style="width:1100px;height:1100px;left:-300px;bottom:-500px;background:rgba(242,163,43,.22)"></div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+  <div class="etiquette rev" style="--d:0">AFMEY</div>
+  <h1 class="rev" style="--d:.2;margin-top:30px">Merci,<br>ma sœur.</h1>
+  <p class="gros rev" style="--d:.6;margin-top:50px;color:var(--sable)">Ensemble, nous grandissons.</p>
+</div>
+<div class="kente"></div><div class="notes-contenu" hidden><ul><li>Remercier, rappeler la fiche à emporter. Annexe : les fiches par rôle suivent.</li></ul></div></section>
+<section class="slide " data-section="Annexe" data-titre="Fiche : Membre"><div style="display:flex;gap:80px;align-items:center;flex:1">
+ <div style="flex:1">
+  <div class="etiquette rev">Annexe · fiche du rôle</div>
+  <h2 class="rev" style="--d:.1">Membre : <em class="soulign">voir et demander</em></h2>
+  <div style="display:flex;flex-direction:column;gap:18px;margin-top:44px"><div class="coche rev" style="--d:0.3;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">1</div>Mon espace : mes comptes</div><div class="coche rev" style="--d:0.5;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">2</div>Prêts : demander un prêt</div><div class="coche rev" style="--d:0.7;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">3</div>La cloche : mes nouvelles</div></div>
+ </div>
+ <div class="rev zoom" style="--d:.5;text-align:center"><div class="avatar " style="margin:0 auto;width:260px;height:260px;font-size:130px">M</div><p class="gros" style="margin-top:34px;font-weight:700">3 écrans à connaître</p></div>
+</div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>Annexe · Membre</span></div><div class="notes-contenu" hidden><ul><li>Rôle Membre : consulter ses comptes, demander un prêt, lire ses notifications.</li></ul></div></section>
+<section class="slide " data-section="Annexe" data-titre="Fiche : Trésorière"><div style="display:flex;gap:80px;align-items:center;flex:1">
+ <div style="flex:1">
+  <div class="etiquette rev">Annexe · fiche du rôle</div>
+  <h2 class="rev" style="--d:.1">Trésorière : <em class="soulign">saisir et suivre</em></h2>
+  <div style="display:flex;flex-direction:column;gap:18px;margin-top:44px"><div class="coche rev" style="--d:0.3;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">1</div>Mouvements : enregistrer cotisations et dépenses</div><div class="coche rev" style="--d:0.5;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">2</div>Réunions : pointer présences et cotisations</div><div class="coche rev" style="--d:0.7;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">3</div>Prêts : enregistrer un remboursement</div><div class="coche rev" style="--d:0.9000000000000001;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">4</div>Caisses : suivre les soldes</div></div>
+ </div>
+ <div class="rev zoom" style="--d:.5;text-align:center"><div class="avatar t2" style="margin:0 auto;width:260px;height:260px;font-size:130px">T</div><p class="gros" style="margin-top:34px;font-weight:700">Elle saisit, elle ne valide pas</p></div>
+</div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>Annexe · Trésorière</span></div><div class="notes-contenu" hidden><ul><li>Rôle Trésorière : saisir. Les mouvements saisis restent « À valider » tant que la présidente n'a pas validé.</li></ul></div></section>
+<section class="slide " data-section="Annexe" data-titre="Fiche : Présidente"><div style="display:flex;gap:80px;align-items:center;flex:1">
+ <div style="flex:1">
+  <div class="etiquette rev">Annexe · fiche du rôle</div>
+  <h2 class="rev" style="--d:.1">Présidente : <em class="soulign">valider</em></h2>
+  <div style="display:flex;flex-direction:column;gap:18px;margin-top:44px"><div class="coche rev" style="--d:0.3;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">1</div>Mouvements : valider ou rejeter</div><div class="coche rev" style="--d:0.5;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">2</div>Prêts : approuver ou refuser</div><div class="coche rev" style="--d:0.7;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">3</div>Distributions : valider la répartition des intérêts</div><div class="coche rev" style="--d:0.9000000000000001;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">4</div>Rapports : suivre l'année</div></div>
+ </div>
+ <div class="rev zoom" style="--d:.5;text-align:center"><div class="avatar t3" style="margin:0 auto;width:260px;height:260px;font-size:130px">P</div><p class="gros" style="margin-top:34px;font-weight:700">Elle vérifie avant de valider</p></div>
+</div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>Annexe · Présidente</span></div><div class="notes-contenu" hidden><ul><li>Rôle Présidente : valider. La validation rend définitif ce que la trésorière a saisi.</li></ul></div></section>
+<section class="slide " data-section="Annexe" data-titre="Fiche : Administratrice"><div style="display:flex;gap:80px;align-items:center;flex:1">
+ <div style="flex:1">
+  <div class="etiquette rev">Annexe · fiche du rôle</div>
+  <h2 class="rev" style="--d:.1">Administratrice : <em class="soulign">tout le reste</em></h2>
+  <div style="display:flex;flex-direction:column;gap:18px;margin-top:44px"><div class="coche rev" style="--d:0.3;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">1</div>Membres : ajouter, rôles, mots de passe</div><div class="coche rev" style="--d:0.5;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">2</div>Paramètres : cotisation, intérêts, amendes</div><div class="coche rev" style="--d:0.7;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">3</div>Clôture de l'année : ouvrir un nouvel exercice</div><div class="coche rev" style="--d:0.9000000000000001;padding:26px 36px;font-size:36px"><div class="num" style="width:64px;height:64px;font-size:34px">4</div>Rapports et journal</div></div>
+ </div>
+ <div class="rev zoom" style="--d:.5;text-align:center"><div class="avatar t4" style="margin:0 auto;width:260px;height:260px;font-size:130px">A</div><p class="gros" style="margin-top:34px;font-weight:700">Elle garde la clé de la maison</p></div>
+</div><div class="pied"><span>AFMEY · Filles &amp; Femmes Mebounou M'Eyinga</span><span>Annexe · Administratrice</span></div><div class="notes-contenu" hidden><ul><li>Rôle Administratrice : membres, paramètres, rôles, clôture. Attention : la clôture est définitive pour l'exercice.</li></ul></div></section>
+</div></div>
+<div id="compteur"></div>
+<div id="aide">→ suivant · ← précédent · N notes · G vue d'ensemble · F plein écran</div>
+<div id="notes" aria-live="polite"></div>
+<div id="grille-vue"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

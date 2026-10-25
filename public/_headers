@@ -1,0 +1,16 @@
+# En-têtes de sécurité (Cloudflare Pages et Netlify). Copiés dans dist/ par « npm run build ».
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+# Fichiers générés (nom changé à chaque version) : conservés longtemps par le navigateur
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# La page d'accueil est toujours relue pour que les mises à jour arrivent vite
+/index.html
+  Cache-Control: no-cache
